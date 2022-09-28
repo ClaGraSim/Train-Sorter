@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Train-Sorter-github:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b1621f22-e1d7-4788-8b6b-0478aba449a8" name="Default Changelist" comment="Big cleanup, reworked start screen, deleted unnecessary code, setup github">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/Train Sorter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/lib/CodeDraw.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/lib/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/out/artifacts/Train_Sorter_jar/Train Sorter_10x10_alpha.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/out/artifacts/Train_Sorter_jar/Train Sorter_beta 0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/out/artifacts/Train_Sorter_jar/Train Sorter_beta 0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/Colors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/GameArchive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/Positioning.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/Rail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/Start.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/TODO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/Train.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/docs/CHANGELOG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/src/Colors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/src/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/src/Position.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/src/Positioning.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/src/Rail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/src/Start.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/src/Train.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/src/docs/CHANGELOG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train Sorter/src/docs/TODO" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2FP0RvjX8GZbhNs5JTMv9HhVVMi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Train Sorter" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Start" />
+      <module name="Train-Sorter-github" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b1621f22-e1d7-4788-8b6b-0478aba449a8" name="Default Changelist" comment="" />
+      <changelist id="" name="Big cleanup, reworked start screen, deleted unnecessary code, setup github" comment="" />
+      <changelist id="" name="Big cleanup, reworked start screen, deleted unnecessary code" comment="" />
+      <created>1664378406533</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664378406533</updated>
+      <workItem from="1664378408448" duration="7855000" />
+      <workItem from="1664387026774" duration="665000" />
+    </task>
+    <task id="LOCAL-00001" summary="Big cleanup, reworked start screen, deleted unnecessary code">
+      <created>1664385075794</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664385075794</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Big cleanup, reworked start screen, deleted unnecessary code">
+      <created>1664386847053</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664386847053</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Big cleanup, reworked start screen, deleted unnecessary code, setup github">
+      <created>1664386914938</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664386914938</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Big cleanup, reworked start screen, deleted unnecessary code, setup github">
+      <created>1664387078889</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664387078889</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Big cleanup, reworked start screen, deleted unnecessary code, setup github">
+      <created>1664387240260</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664387240260</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Big cleanup, reworked start screen, deleted unnecessary code" />
+    <MESSAGE value="Big cleanup, reworked start screen, deleted unnecessary code, setup github" />
+    <option name="LAST_COMMIT_MESSAGE" value="Big cleanup, reworked start screen, deleted unnecessary code, setup github" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="711" y="381" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1664387525212">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="711" y="381" key="#com.intellij.ide.util.TreeClassChooserDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664387525212" />
+    <state x="707" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1664384872312">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="707" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664384872312" />
+    <state x="761" y="332" key="FileChooserDialogImpl" timestamp="1664387547025">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="761" y="332" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664387547025" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1664386974240">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664386974240" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1664386974240">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664386974240" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1664386974240">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664386974240" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1664386974240">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664386974240" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1664388164423">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664388164423" />
+    <state x="807" y="434" key="VCS.ChangelistChooser" timestamp="1664387055898">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="807" y="434" key="VCS.ChangelistChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664387055898" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1664387242452">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664387242452" />
+  </component>
+</project>
