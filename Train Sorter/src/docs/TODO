@@ -6,6 +6,7 @@ TODO:
  6. optimize text for widescreen(make responsive to height as well as width with a max_size-function?)
  7. optimize number-box-sizes to make them scale to wide and tall windows(use width AND height for scaling)
  8. continue documentation
+ 9. implement bottomText/topText positions in Positioning
 
 IDEAS:
 title/text-scaling: max width, max height, check how font size behaves
@@ -15,3 +16,4 @@ draw a letter on trains so their color isn't the only distinguishable feature (c
 
 make Positioning an interface, make trainPositioning and gridPositioning?
 style trains more?
+

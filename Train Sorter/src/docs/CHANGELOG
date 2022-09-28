@@ -19,3 +19,8 @@ CHANGELOG: timeline of things that got done/changed
 - window name changed from "CodeDraw" to "Train Sorter beta 0.2"
 --- created beta 0.2
 - worked on title position so it doesn't overlap with 10x10 games(mostly, still work in progress)
+
+28.09.2022
+- uploaded project to GitHub
+- archived a copy, threw away all unnecessary parts from the main version
+- reworked start screen

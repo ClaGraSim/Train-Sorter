@@ -1,29 +1,31 @@
 import codedraw.CodeDraw;
-
 import java.awt.*;
 
-// Creates and stores possible train positions and their coordinates, maybe size too
-// (Hopefully hides a lot of math from the game-structure)
+// Creates and stores possible train positions and their coordinates
 public class Positioning {
     //TODO: finish documentation, remove redundant variables
     // check what should be public and check for redundancy, especially cd and train size
 
     /** number of rails */
-    private int rails;
+    private final int rails;
     /** number of trains per rail */
-    private int trainsPR;
+    private final int trainsPR;
     /** total number of trains in the system */
-    private int trainsTotal;
+    private final int trainsTotal;
     private double section_width;
     private double section_length;
-    private double cw = Start.CW;
-    private double ch = Start.CH;
-    private Position[][] positions; // all possible train positions
-    private Rail[] railStorage; // all rails, rails are stacks
-    private Rail trainStorage; // all trains as objects in one list, to be shuffled and sorted into rails
-    private Position sortingStationPosition; // the sorting station position
+    private final double cw = Start.CW;
+    private final double ch = Start.CH;
+    private final Position[][] positions; // all possible train positions
+    private final Rail[] allRails; // all rails, rails are stacks
+    private final Rail trainStorageRail; // all trains as objects in one list, to be shuffled and sorted into rails
+    private final Position sortingStationPosition; // the sorting station position
     private Train sortingStationContent; // Content of sorting station
-    private CodeDraw cd;
+    private final CodeDraw cd;
+
+    // For future development
+    public Position topText;
+    public Position bottomText;
 
     public static double oldTrainSize;
     public static double trainSize;
@@ -32,7 +34,7 @@ public class Positioning {
         rails = number_of_rails + 1;
         trainsPR = number_of_trains_per_rail;
         trainsTotal = number_of_trains_per_rail * number_of_rails;
-        trainStorage = new Rail(trainsTotal);
+        trainStorageRail = new Rail(trainsTotal);
         positions = new Position[rails][trainsPR];
         calculatePositions();
 
@@ -40,7 +42,23 @@ public class Positioning {
         trainSize = section_length * 0.29;
         sortingStationPosition = new Position(cw/2, section_length * (trainsPR + 2) + section_length/4);
         this.cd = cd;
-        railStorage = new Rail[rails];
+        allRails = new Rail[rails];
+    }
+
+    // For the start screen
+    public Positioning(CodeDraw cd) {
+        rails = 3;
+        trainsPR = 1;
+        trainsTotal = 3;
+        trainStorageRail = new Rail(trainsTotal);
+        positions = new Position[rails][trainsPR];
+        calculatePositions();
+        trainSize = section_length * 0.30;
+
+        // Sorting station gets hidden
+        sortingStationPosition = new Position(-100, -100);
+        this.cd = cd;
+        allRails = new Rail[rails];
     }
 
     /** Calculates possible train positions and puts them in an array. */
@@ -53,7 +71,6 @@ public class Positioning {
         for(int i = 0; i < positions.length; i++){
             double currentY = section_length * 2;
             for(int j = 0; j < positions[i].length; j++){
-                //System.out.println("position " + i + j );
                 positions[i][j] = new Position(currentX, currentY);
                 currentY += section_length;
             }
@@ -61,53 +78,38 @@ public class Positioning {
         }
     }
 
-    /** Initialize empty rail storage, fill with sorted trains */
-    public void initializeTrains(){
-        // Initialize Rail storage
-        System.out.println("Clearing rails...");
-        clearRailStorage();
-
-        System.out.println("Generating trains...");
-        fillTrainStorage();
-
-        System.out.println("Filling rails with sorted trains...");
+    /** Initialize empty rail storage, fill with trains
+     * @param shuffle true for shuffled trains, false for ordered trains
+     */
+    public void generateTrains(boolean shuffle){
+        clearAllRails();
+        fillTrainStorageRail();
+        if(shuffle){ trainStorageRail.shuffle(); }
         fillRailsFromTrainStorage();
     }
-
-    /** Initialize empty rail storage, fill with shuffled trains */
-    public void shuffleTrains(){
-        // Initialize Rail storage
-        System.out.println("Clearing rails...");
-        clearRailStorage();
-
-        System.out.println("Generating trains...");
-        fillTrainStorage();
-
-        System.out.println("Shuffling trains...");
-        trainStorage.shuffle();
-
-        System.out.println("Filling rails with shuffled trains...");
-        fillRailsFromTrainStorage();
+    public void generateStartScreenTrains(){
+        clearAllRails();
+        for(int i = 0; i < positions.length; i++){
+            Color color = Colors.pick(i + 3);
+            for(int j = 0; j < positions[i].length; j++){
+                allRails[i].put(new Train(color, 0, 1));
+            }
+        }
     }
 
     /** clear rail storage and fill with empty rails */
-    private void clearRailStorage(){
-        for(int i = 0; i < railStorage.length; i++){
-            railStorage[i] = new Rail(trainsPR);
+    private void clearAllRails(){
+        for(int i = 0; i < allRails.length; i++){
+            allRails[i] = new Rail(trainsPR);
         }
     }
 
     /** Generates all trains for the game */
-    private void fillTrainStorage(){
-        Color color;
+    private void fillTrainStorageRail(){
         for(int i = 1; i < positions.length; i++){
-            // Random Colors, can be predefined or random colors
-            // TODO: (also maybe letters for color blindness mode)
-            //color = Colors.getLightRandom(5);
-            //color = Colors.getRandom(i*10);
-            color = Colors.pick(i - 1);
+            Color color = Colors.pick(i - 1);
             for(int j = 0; j < positions[i].length; j++){
-                trainStorage.put(new Train(color, i, j * -1 + trainsPR));
+                trainStorageRail.put(new Train(color, i, j * -1 + trainsPR));
             }
         }
     }
@@ -116,16 +118,9 @@ public class Positioning {
     private void fillRailsFromTrainStorage(){
         for(int i = 1; i < positions.length; i++){
             for(int j = 0; j < positions[i].length; j++){
-                railStorage[i].put(trainStorage.take());
+                allRails[i].put(trainStorageRail.take());
             }
         }
-    }
-
-    public double trainSize(){
-        return trainSize;
-    }
-    public double oldTrainSize(){
-        return oldTrainSize;
     }
     public double section_length(){
         return section_length;
@@ -134,20 +129,6 @@ public class Positioning {
         return section_width;
     }
 
-    /** Check if coordinates are at a valid position, give back that position, else return -1
-     * @param position Position(coordinates) of object/mouse click to check
-     * @return array index if position is valid, -1 if position isn't valid. Check for >= 0
-     */
-    public int checkPosition(Position position){
-        for(int i = 0; i < positions.length; i++){
-            for(int j = 0; j < positions[i].length; j++){
-                if(position.isInsideOf(positions[i][j] , section_width, section_length)){
-                    return i * 10 + j;
-                }
-            }
-        }
-        return -1;
-    }
     /** Check if coordinates are at a valid rail position, give back the rail number, else return -1
      * @param position Position(coordinates) of object/mouse click to check
      * @return array index if position is valid, -1 if position isn't valid. Check for >= 0
@@ -175,25 +156,12 @@ public class Positioning {
         drawRailHere(sortingStationPosition);
     }
 
-
-    public void drawTrainsTest(boolean sortingTrain){
-        // [Rails][Trains]
-        for(int i = 1; i < positions.length; i++){
-            for(int j = 0; j < positions[i].length; j++){
-                positions[i][j].drawTrain(cd, trainSize, Color.blue, j);
-            }
-        }
-        if(sortingTrain){
-            sortingStationPosition.drawTrain(cd, trainSize, Color.green, 0);
-        }
-    }
-
     /** Draws all trains including the sorting station(if in use). */
     public void drawTrains(){
         // draw trains, draw sorting rail content if there
         for(int i = 0; i < positions.length; i++){
             for(int j = 0; j < positions[i].length; j++){
-                Train selectedTrain = railStorage[i].getFromPosition(j);
+                Train selectedTrain = allRails[i].getFromPosition(j);
 
                 if(selectedTrain != null){
                     selectedTrain.draw(cd, positions[i][j]);
@@ -211,10 +179,7 @@ public class Positioning {
      * @return true if true
      */
     public boolean checkIfSortingStation(Position position){
-        if(position.isInsideOf(sortingStationPosition, section_width, section_length)){
-            return true;
-        }
-        return false;
+        return position.isInsideOf(sortingStationPosition, section_width, section_length);
     }
 
     /** Check if sorting station is, in fact, empty.
@@ -232,13 +197,10 @@ public class Positioning {
         boolean answer = false;
         // Only checks if all trains are on rails
         if(sortingStationIsEmpty()){
-            for(int i = 0; i < railStorage.length; i++) {
-                //System.out.println("Rail " + i + " is being checked");
-                if (railStorage[i].checkIfTrainIsCorrect()) {
+            for(int i = 0; i < allRails.length; i++) {
+                if (allRails[i].checkIfTrainIsCorrect()) {
                     answer = true;
-                    //System.out.print(" - correct\n");
                 } else {
-                    //System.out.print(" - not correct\n");
                     return false;
                 }
             }
@@ -252,11 +214,11 @@ public class Positioning {
      */
     public void useSortingStation(int railIndex){
         if(sortingStationIsEmpty()){
-            sortingStationContent = railStorage[railIndex].take();
-        } else if(!sortingStationIsEmpty() && railStorage[railIndex].isFull()){
+            sortingStationContent = allRails[railIndex].take();
+        } else if(!sortingStationIsEmpty() && allRails[railIndex].isFull()){
             // nothing happens
         }else{
-            railStorage[railIndex].put(sortingStationContent);
+            allRails[railIndex].put(sortingStationContent);
             sortingStationContent = null;
         }
     }
@@ -269,7 +231,6 @@ public class Positioning {
     }
 
     public void drawNumbers(){
-        // TODO
         int number = 2;
         for(int i = 0; i < positions.length; i++){
             for(int j = 0; j < positions[i].length; j++){
@@ -279,18 +240,13 @@ public class Positioning {
         }
     }
     public int checkPositionNumber(Position position){
-        // TODO
         for(int i = 0; i < positions.length; i++){
             for(int j = 0; j < positions[i].length; j++){
                 if(position.isInsideOf(positions[j][i], section_width, section_length)){
-                    //System.out.println("checkPositionNumber i: " + (i));
-                    //System.out.println("checkPositionNumber j: " + (j));
                     return 2 + i * rails + j;
                 }
             }
         }
         return -1;
     }
-
-
 }

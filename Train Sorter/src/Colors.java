@@ -5,21 +5,6 @@ import java.util.Random;
 public class Colors {
 
     //predefined colors:
-    public static Color[] colors_light = {
-            new Color(204, 0, 0),
-            new Color(204, 102, 0),
-            new Color(204, 204, 0),
-            new Color(0, 204, 0),
-            new Color(0, 204, 204),
-            new Color(0, 102, 204),
-            new Color(0, 0, 204),
-            new Color(102, 0, 204),
-            new Color(204, 0, 204),
-            new Color(102, 0, 102),
-            new Color(102, 102, 102),
-            new Color(102, 204, 0),
-            new Color(0, 204, 102),
-    };
     public static Color[] colors_medium = {
             new Color(153, 0, 0),
             new Color(153, 76, 0),
@@ -35,37 +20,6 @@ public class Colors {
             new Color(76, 153, 0),
             new Color(0, 153, 76),
     };
-    public static Color[] colors_mediumdark = {
-            new Color(102, 0, 0),
-            new Color(102, 51, 0),
-            new Color(102, 102, 0),
-            new Color(0, 102, 0),
-            new Color(0, 102, 153),
-            new Color(0, 51, 153),
-            new Color(0, 0, 153),
-            new Color(51, 0, 153),
-            new Color(102, 0, 153),
-            new Color(51, 0, 51),
-            new Color(51, 51, 51),
-            new Color(51, 102, 0),
-            new Color(0, 102, 51),
-    };
-    public static Color[] colors_dark = {
-            new Color(51, 0, 0),
-            new Color(51, 25, 0),
-            new Color(51, 51, 0),
-            new Color(0, 51, 0),
-            new Color(0, 51, 51),
-            new Color(0, 25, 51),
-            new Color(0, 0, 51),
-            new Color(25, 0, 51),
-            new Color(51, 0, 51),
-            new Color(25, 0, 25),
-            new Color(25, 25, 25),
-            new Color(25, 51, 0),
-            new Color(0, 51, 25),
-    };
-
 
     public static Color pick(int index){
         if(index < colors_medium.length){

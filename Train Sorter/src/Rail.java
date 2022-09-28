@@ -44,8 +44,7 @@ public class Rail {
     public boolean checkIfTrainIsCorrect(){
         Train train, nextTrain;
         boolean answer = false;
-        // Only checks rail if it is completely full, if it is empty it counts as sorted
-        //System.out.println("Size: " + size + ", Max size: " + maxSize);
+        // Only checks rail if it's completely full, if it's empty it counts as sorted
         if(size == maxSize){
             for(int i = 0; i < size - 1; i++){
                 train = getFromPosition(i);
@@ -61,9 +60,9 @@ public class Rail {
         }
         return answer;
     }
+
     public boolean isFull(){
         return size == maxSize;
     }
-
 
 }
