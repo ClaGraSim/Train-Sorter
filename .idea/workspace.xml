@@ -25,34 +25,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1621f22-e1d7-4788-8b6b-0478aba449a8" name="Default Changelist" comment="Big cleanup, reworked start screen, deleted unnecessary code, setup github">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/Train Sorter.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/lib/CodeDraw.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/lib/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/out/artifacts/Train_Sorter_jar/Train Sorter_10x10_alpha.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/out/artifacts/Train_Sorter_jar/Train Sorter_beta 0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/out/artifacts/Train_Sorter_jar/Train Sorter_beta 0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/Colors.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/GameArchive.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/Position.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/Positioning.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/Rail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/Start.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/TODO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/Train.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/out/production/Train Sorter/docs/CHANGELOG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/src/Colors.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/src/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/src/Position.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/src/Positioning.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/src/Rail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/src/Start.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/src/Train.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/src/docs/CHANGELOG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train Sorter/src/docs/TODO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Train-Sorter-github.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +50,8 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Train Sorter" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/CodeDraw.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -83,7 +60,7 @@
   <component name="RunManager">
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Start" />
-      <module name="Train-Sorter-github" />
+      <module name="Train-Sorter" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,14 +77,13 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b1621f22-e1d7-4788-8b6b-0478aba449a8" name="Default Changelist" comment="" />
-      <changelist id="" name="Big cleanup, reworked start screen, deleted unnecessary code, setup github" comment="" />
-      <changelist id="" name="Big cleanup, reworked start screen, deleted unnecessary code" comment="" />
       <created>1664378406533</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664378406533</updated>
       <workItem from="1664378408448" duration="7855000" />
       <workItem from="1664387026774" duration="665000" />
+      <workItem from="1664388464152" duration="131000" />
     </task>
     <task id="LOCAL-00001" summary="Big cleanup, reworked start screen, deleted unnecessary code">
       <created>1664385075794</created>
@@ -144,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664387240260</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="GitHub Data Structure Fix">
+      <created>1664388239018</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664388239018</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +148,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Big cleanup, reworked start screen, deleted unnecessary code" />
     <MESSAGE value="Big cleanup, reworked start screen, deleted unnecessary code, setup github" />
-    <option name="LAST_COMMIT_MESSAGE" value="Big cleanup, reworked start screen, deleted unnecessary code, setup github" />
+    <MESSAGE value="GitHub Data Structure Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="GitHub Data Structure Fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="711" y="381" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1664387525212">
@@ -176,10 +160,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664384872312" />
-    <state x="761" y="332" key="FileChooserDialogImpl" timestamp="1664387547025">
+    <state x="761" y="332" key="FileChooserDialogImpl" timestamp="1664388587263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="761" y="332" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664387547025" />
+    <state x="761" y="332" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664388587263" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1664386974240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -196,17 +180,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664386974240" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1664388164423">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1664388596335">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664388164423" />
+    <state x="461" y="165" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664388596335" />
     <state x="807" y="434" key="VCS.ChangelistChooser" timestamp="1664387055898">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="434" key="VCS.ChangelistChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664387055898" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1664387242452">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1664388241244">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664387242452" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1664388241244" />
   </component>
 </project>
