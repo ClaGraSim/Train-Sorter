@@ -1,0 +1,17 @@
+TODO:
+ 2. restart/new game button
+ 3. Add screen resolution options?
+ 4. (optional) add background color/train color options
+ 5. rework start screen
+ 6. optimize text for widescreen(make responsive to height as well as width with a max_size-function?)
+ 7. optimize number-box-sizes to make them scale to wide and tall windows(use width AND height for scaling)
+ 8. continue documentation
+
+IDEAS:
+title/text-scaling: max width, max height, check how font size behaves
+maybe make a text-class or new text-functions in position (using width and height/CW, CH again instead of size
+select color scheme, background color etc, greyscale option?
+draw a letter on trains so their color isn't the only distinguishable feature (colorblindness friendly design)
+
+make Positioning an interface, make trainPositioning and gridPositioning?
+style trains more?

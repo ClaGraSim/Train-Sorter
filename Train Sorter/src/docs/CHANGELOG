@@ -1,0 +1,21 @@
+CHANGELOG: timeline of things that got done/changed
+
+24.09.2022
+- started project
+
+25.09.2022
+- game is now playable, minor bugs with winScreen
+
+26.09.2022
+- winScreen-bugs are gone?
+- created 10x10_alpha (resolution 1800x1000px)
+
+- added layout options into the screen before the game starts
+- made game replayable without closing by clicking the win screen
+--- created beta 0.1 (resolution 1000x1000px)
+
+27.09.2022
+- window size now scales to match screen (opens slightly smaller than screen)
+- window name changed from "CodeDraw" to "Train Sorter beta 0.2"
+--- created beta 0.2
+- worked on title position so it doesn't overlap with 10x10 games(mostly, still work in progress)
