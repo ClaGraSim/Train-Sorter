@@ -1,7 +1,5 @@
 import codedraw.CodeDraw;
-
 import java.awt.*;
-import java.util.Scanner;
 
 public class Start {
 
